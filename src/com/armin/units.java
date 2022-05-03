@@ -6,18 +6,30 @@ public class units {
 
     private ArrayList<attacker_Units> military_units = new ArrayList<attacker_Units>();
 
-    public void addAttackerUnits(attacker_Units military_unit){
+    public void addAttackerUnits(attacker_Units military_unit) {
         military_units.add(military_unit);
     }
 
-    public attacker_Units getMilitaryUnits(String attacker_code){
+    public attacker_Units getMilitaryUnits(String attacker_code) {
 
-        for(int i = 0; i < military_units.size(); i++) {
-            if(military_units.get(i).getAttackerCode() == attacker_code){
+        for (int i = 0; i < military_units.size(); i++) {
+            if (military_units.get(i).getAttackerCode() == attacker_code) {
                 return military_units.get(i);
             }
         }
         return null;
     }
 
+    public String upgradeUnits(String attacker_code) {
+
+        for (int i = 0; i < military_units.size(); i++) {
+            if (military_units.get(i).getAttackerHealth() < 10) {
+                return "recover health first!";
+            } else if (military_units.get(i).getAttackerHealth() == 10) {
+                return "upgrading!";
+            }
+        }
+
+        return attacker_code;
+    }
 }
