@@ -1,6 +1,6 @@
 package com.armin;
 
-public class attacker_Units {
+public class attacker_Units extends basics_for_units {
 
     private String attacker_code;
 
