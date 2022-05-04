@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class ImageUtils {
 
-    public static Image LoadImage(String filePath){
+  /**  public static Image LoadImage(String filePath){
         try {
             return ImageIO.read(ImageUtils.class.getResource(filePath));
         } catch (IOException e){
@@ -14,5 +14,5 @@ public class ImageUtils {
         }
 
         return null;
-    }
+    } */
 }

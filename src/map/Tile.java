@@ -1,14 +1,14 @@
 package map;
 
-import gfx.SpriteLibrary;
+// import gfx.SpriteLibrary;
 
 import java.awt.*;
 
 public class Tile {
 
-    private Image Spirite;
+   /** private Image Spirite;
 
     public Tile(SpirteLibrary spiriteLibrary) {
 
-    }
+    } */
 }
